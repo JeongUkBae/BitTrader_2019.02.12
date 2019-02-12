@@ -23,7 +23,7 @@ public class Pagination implements Capable{
 		this.pageNum = (request.getParameter("page_num")==null)?"1":request.getParameter("page_num");
 		
 		String pageSize = request.getParameter("page_size");
-		this.pageSize = (pageSize==null)?"5":"pageSize";
+		this.pageSize = (pageSize==null)?"5":pageSize;
 		System.out.println("pageSize:::"+this.pageSize);
 		this.totalcount = CustomerServiceImpl.getInstance().countCustomer();
 		//this.startRow = String.valueOf(totalcount-Integer.parseInt(this.pageSize));

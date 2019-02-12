@@ -6,7 +6,7 @@ import lombok.Data;
 public class Proxy implements Capable{
 
 	private Pagination page;
-	public void proxy() {carryOut();}
+	public Proxy() {carryOut();}
 	@Override
 	public void carryOut() {
 		this.page = new Pagination();
